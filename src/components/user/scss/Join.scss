@@ -1,0 +1,39 @@
+.join-wrapper {
+  width: 100%;
+  height: 100vh;
+  background: url("../../layout/img/background1.jpg");
+}
+
+.container {
+  width: 500px !important;
+}
+
+#postcode {
+  background : rgb(255, 255, 255);
+  position : fixed;
+  left:10px;
+  top:10px;
+  height:300px;
+  width:300px;
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  opacity: 1;
+  -webkit-text-fill-color: white !important;  
+}
+
+.MuiOutlinedInput-root.MuiOutlinedInput-notchedOutline {
+  color: white !important;
+}
+
+#email:-webkit-autofill,
+#email:-webkit-autofill:hover,
+#email:-webkit-autofill:focus,
+#email:-webkit-autofill:active,
+#detail-address:-webkit-autofill,
+#detail-address:-webkit-autofill:hover,
+#detail-address:-webkit-autofill:focus,
+#detail-address:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #000 inset !important;
+  color: #fff !important;
+}

@@ -1,0 +1,142 @@
+//전체 배경화면
+body {
+    //폰트
+    @font-face {
+        font-family: "Orbitron-Bold";
+        src: url("../../../../public/assets/fonts/Orbitron-Bold.woff2");
+        font-style: normal;
+     }
+    }
+    
+    .start-wrapper {
+        width: 100%;
+        height: 100vh;
+        background: url("../img/galaxy.gif") no-repeat;
+        background-size: 100% 105%;
+    }
+    
+    //startPage background img
+    
+    .main-start-img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        
+        .start-page-body {
+            width: 100%;
+            height: 660px;
+            overflow: hidden;
+            
+        }
+    
+    }
+    
+    .logo-welcome {
+        margin-left: 40px;
+        
+        .main-logo {
+            width: 150px;
+            margin-top: 20px;
+            margin-right: 30px;
+        }
+    
+        //Welcome 글씨
+        .welcome-img {
+            width: 500px;
+            padding: 1%;
+            z-index: 1;
+        }
+    }
+    
+    
+    //버튼 집합들
+    .setBtn {
+        position: absolute;
+        top: 25%;
+        border: 0;
+        outline: 0;
+        // padding: 10px;
+        margin-left: 30px;
+        z-index: 1;
+        
+    
+        .start-btn {
+            border: 0;
+            outline: 0;
+            background: none;
+            background-image: url("../../../../public/assets/button/Btn05Blue_p.png");
+            background-size: 100% 100%;
+            font-family: 'Orbitron-Bold' !important;
+            font-size: 50px;
+            color: white;
+            max-width: 1920px;
+            width: 400px;
+            height: 200px;
+            cursor: pointer;
+            position: absolute;
+            // margin-top: 5%;
+            margin-left: 3%;
+        }
+        
+        .join-btn {
+            border: 0;
+            outline: 0;
+            background: none;
+            background-image: url("../../../../public/assets/button/Btn05Blue_p.png");
+            background-size: 100% 100%;
+            font-family: 'Orbitron-Bold' !important;
+            font-size: 50px;
+            color: white;
+            max-width: 1920px;
+            width: 400px;
+            height: 200px;
+            cursor: pointer;
+            //margin-left: 2%;
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 3%;
+        }
+
+        .login-btn {
+            border: 0;
+            outline: 0;
+            background: none;
+            background-image: url("../../../../public/assets/button/Btn05Blue_p.png");
+            background-size: 100% 100%;
+            font-family: 'Orbitron-Bold' !important;
+            font-size: 50px;
+            color: white;
+            max-width: 1920px;
+            width: 400px;
+            height: 200px;
+            cursor: pointer;
+            position: absolute;
+            margin-top: 400px;
+            margin-left: 3%;
+        }
+
+        .mypage-btn {
+            border: 0;
+            outline: 0;
+            background: none;
+            background-image: url("../../../../public/assets/button/Btn05Blue_p.png");
+            background-size: 100% 100%;
+            font-family: 'Orbitron-Bold' !important;
+            font-size: 50px;
+            color: white;
+            max-width: 1920px;
+            width: 400px;
+            height: 200px;
+            cursor: pointer;
+            //margin-left: 2%;
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 3%;
+        }
+        
+        .page-btn:hover {
+            opacity: 80%;
+            color: #E91E63;
+        }
+        
+    }

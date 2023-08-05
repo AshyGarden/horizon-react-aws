@@ -1,0 +1,28 @@
+.header-menubar {
+    background-image: url("../../solarsystem/img/Tip001Blue.png");
+    background-size: 100% 100%;
+    height: 100px;
+
+    //[Page-Title]
+    .typography-cs {
+       margin-top: 10px;
+    }
+
+    //[아아콘 버튼]
+    .hamburger {
+        margin-top: 10px;
+        //임시적용
+        color: #2196F3;
+    }
+
+    .profile-icon,
+    .locked,
+    .lock-open,
+    .join-btn,
+    .shop-basket {
+        cursor: pointer;
+        margin-top: 5px;
+        color: #2196F3;
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,14 @@
+.login-wrapper {
+  width: 100%;
+  height: 100vh;
+  background: url("../../layout/img/background1.jpg");  
+}
+
+.MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+
+.MuiOutlinedInput-root[data-shrink='true'] .MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+

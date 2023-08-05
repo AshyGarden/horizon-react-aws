@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'PyeongChangPeace-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* @font-face {
+  font-family: 'PyeongChangPeace-Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Light.woff2') format('woff2');
+  font-style: normal;
+} */
+
+* {
+  font-family: 'Gowun Dodum', sans-serif;
+}
+
+.App {
+  text-align: center;
+  max-width: 1920px;
+  max-height: 1080px;
+  min-height: 100vh;
+  min-width: 100vw;
+  height: 100%;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}

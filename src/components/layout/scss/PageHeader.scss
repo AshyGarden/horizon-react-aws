@@ -1,0 +1,154 @@
+//============={Header}==============
+
+//폰트
+@font-face {
+   font-family: "Orbitron-Bold";
+   src: url("../../../../public/assets/fonts/Orbitron-Bold.woff2");
+   font-style: normal;
+}
+
+.MainHeader {
+   width: 100%;
+ }
+ 
+ //헤더 전체 영역
+ .menu {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-image: url("../../solarsystem/img/Tip001Blue.png");
+    background-size: 100% 100%;
+    height: 130px;
+    font-family: 'Orbitron-Bold' !important;
+ }
+
+ //메뉴 버튼 집합체
+ .menuBtn{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   height: 100%;
+
+ }
+
+//{헤더 버튼들}
+.mainBtn button{
+   border: 0;
+   outline: 0;
+   cursor: pointer;
+   color: white;
+   padding: 50px;
+   font-size: 22px;
+   margin-bottom: 5px;
+   background: url("../../solarsystem/img/Btn07Blue_p.png") no-repeat;
+   background-size: 240px 100px; 
+   background-position: center;
+   width: 240px; 
+   font-family: 'Orbitron-Bold' !important;
+}
+
+.mainBtn button:hover {
+   color: #E91E63;
+   opacity: 80%;
+ }
+
+//{news 버튼}
+.newsBtn button { 
+   border: 0;
+   outline: 0;
+   cursor: pointer;
+   color: white;
+   padding: 50px;
+   font-size: 22px;
+   margin-bottom: 5px;
+   background: url("../../solarsystem/img/Btn07Blue_p.png") no-repeat;
+   background-size: 240px 100px; 
+   background-position: center;
+   width: 240px;
+   font-family: 'Orbitron-Bold' !important;
+}
+
+.newsBtn button:hover {
+   color: #E91E63;
+   opacity: 80%;
+ }
+
+//{SolarSystem 버튼}
+.solarBtn button {
+   border: 0;
+   outline: 0;
+   cursor: pointer;
+   color: white;
+   padding: 50px;
+   font-size: 20px;
+   margin-bottom: 5px;
+   background: url("../../solarsystem/img/Btn07Blue_p.png") no-repeat;
+   background-size: 240px 100px; 
+   background-position: center;
+   width: 240px;
+   font-family: 'Orbitron-Bold' !important;
+}
+
+.solarBtn button:hover {
+   color: #E91E63;
+   opacity: 80%;
+ }
+
+//{horoscope 버튼}
+.hsBtn button {
+   border: 0;
+   outline: 0;
+   cursor: pointer;
+   color: white;
+   padding: 50px;
+   font-size: 22px;
+   margin-bottom: 5px;
+   background: url("../../solarsystem/img/Btn07Blue_p.png") no-repeat;
+   background-size: 240px 100px; 
+   background-position: center;
+   width: 240px;
+   font-family: 'Orbitron-Bold' !important;
+}
+
+.hsBtn button:hover {
+   color: #E91E63;
+   opacity: 80%;
+ }
+
+//{store 버튼}
+.storeBtn button {
+   border: 0;
+   outline: 0;
+   cursor: pointer;
+   color: white;
+   padding: 50px;
+   font-size: 22px;
+   margin-bottom: 5px;
+   background: url("../../solarsystem/img/Btn07Blue_p.png") no-repeat;
+   background-size: 240px 100px; 
+   background-position: center;
+   width: 240px;
+   font-family: 'Orbitron-Bold' !important;
+
+}
+
+.storeBtn button:hover {
+  color: #E91E63;
+  opacity: 80%;
+}
+
+//-------------logBtn-------------
+
+.profile-icon,
+.join-btn,
+.shop-basket,
+.locked,
+.lock-open 
+ {
+   color: #2196F3; 
+   // margin-right: 10px;  
+   cursor: pointer;
+}
+
+
+
+ 
