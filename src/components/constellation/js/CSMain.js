@@ -21,7 +21,11 @@ const CSMain = () => {
   const [boardList, setBoardList] = useState([]);
   const [news, setNews] = useState({});
 
-  const [mainNews, setMainNEws] = useState({});
+  const [mainNews, setMainNews] = useState({
+    title:
+      "올해 페르세우스자리 유성우 극대시간은 8월 13일 16시 29분이라 낮이므로 13일 밤부터 14일 새벽까지 꽤 많은 유성을 볼 수 있을 것이다.",
+    date: "2023.08.01",
+  });
 
   // 요청 헤더 설정
   const requestHeader = {
@@ -54,7 +58,6 @@ const CSMain = () => {
   };
 
   useEffect(() => {
-    console.log("/" + year + month);
     fetch(API_NEWS_URL + "/" + year + month, {
       method: "GET",
       headers: requestHeader,
@@ -88,7 +91,7 @@ const CSMain = () => {
               <MenuItem value="2023">2023</MenuItem>
               <MenuItem value="2022">2022</MenuItem>
             </Select>
-            <FormHelperText>With label + helper text</FormHelperText>
+            {/* <FormHelperText>With label + helper text</FormHelperText> */}
           </FormControl>
           <FormControl sx={{ m: 1, minWidth: 120 }}>
             <InputLabel id="demo-simple-select-helper-label">Month</InputLabel>
@@ -117,7 +120,7 @@ const CSMain = () => {
               <MenuItem value="11">11</MenuItem>
               <MenuItem value="12">12</MenuItem>
             </Select>
-            <FormHelperText>Without label</FormHelperText>
+            {/* <FormHelperText>Without label</FormHelperText> */}
           </FormControl>
           <Stack
             direction="row"
@@ -150,8 +153,8 @@ const CSMain = () => {
           <thead className="notic-news">
             <th>MainNews</th>
             <tr className="notic-table-body2">
-              <td>제임스 웹, NGC 346 산개성단을 자세히 관측하다</td>
-              <td>2023.02.06</td>
+              <td className="main-news-title">{mainNews.title}</td>
+              <td className="main-news-date">{mainNews.date}</td>
             </tr>
           </thead>
         </Table>

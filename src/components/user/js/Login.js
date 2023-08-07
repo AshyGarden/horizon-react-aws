@@ -5,7 +5,7 @@ import "../scss/Login.scss";
 import { API_BASE_URL as BASE, USER } from "../../../config/host-config";
 import { AuthContext } from "../../../util/AuthContext";
 import { useNavigate } from "react-router-dom";
-import HeaderSolar from "../../layout/js/PageHeader";
+import PageHeader from "../../layout/js/PageHeader";
 
 const Login = () => {
   const redirection = useNavigate();
@@ -72,14 +72,14 @@ const Login = () => {
   return (
     <>
       <div className="login-wrapper">
-        <HeaderSolar />
+        <PageHeader />
         <Container
           component="main"
-          maxwidth="xs"
+          maxWidth="xs"
           style={{ margin: "80px auto" }}
         >
           <form noValidate onSubmit={loginHandler}>
-            <Grid container spacing={2} maxwidth="xs">
+            <Grid container spacing={2} maxWidth="xs">
               <Grid item xs={12}>
                 <Typography component="h1" variant="h5">
                   로그인
@@ -99,12 +99,24 @@ const Login = () => {
                   label="email address"
                   name="email"
                   autoFocus
-                  autoComplete="email"
+                  autoComplete="off"
                   InputLabelProps={{
                     style: { color: "white" },
                   }}
-                  InputProps={{ style: { color: "white" } }}
-                  style={{ background: "rgba(0,0,0,0.5)" }}
+                  InputProps={{
+                    style: { color: "white" },
+                    inputProps: {
+                      style: {
+                        background: "rgba(0,0,0,0.5)",
+                      },
+                    },
+                    classes: {
+                      notchedOutline: "outlined", // 테두리 스타일을 변경할 클래스 이름
+                    },
+                  }}
+                  style={{
+                    background: "rgba(0,0,0,0.5)",
+                  }}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -116,12 +128,19 @@ const Login = () => {
                   label="on your password"
                   type="password"
                   id="password"
-                  autoComplete="current-password"
+                  autoComplete="off"
                   InputLabelProps={{
                     style: { color: "white" },
                   }}
-                  InputProps={{ style: { color: "white" } }}
-                  style={{ background: "rgba(0,0,0,0.5)" }}
+                  InputProps={{
+                    style: { color: "white" },
+                    classes: {
+                      notchedOutline: "outlined", // 테두리 스타일을 변경할 클래스 이름
+                    },
+                  }}
+                  style={{
+                    background: "rgba(0,0,0,0.5)",
+                  }}
                 />
               </Grid>
               <Grid item xs={12}>

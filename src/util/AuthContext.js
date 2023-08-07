@@ -16,31 +16,31 @@ export const AuthContextProvider = (props) => {
 
   //컴포넌트가 랜더링 될 때 localStorage에서 로그인 정보를 가지고 와서 상태를 설정.
   useEffect(() => {
-    if (localStorage.getItem("isLoggedIn") === "1") {
+    if (sessionStorage.getItem("isLoggedIn") === "1") {
       setIsLoggedIn(true);
-      setEmail(localStorage.getItem("LOGIN_USEREMAIL"));
+      setEmail(sessionStorage.getItem("LOGIN_USEREMAIL"));
     }
   }, []);
 
   //로그아웃 핸들러
   const logoutHandler = () => {
-    localStorage.clear();
+    sessionStorage.clear();
     setIsLoggedIn(false);
   };
 
   //로그인 핸들러
   const loginHandler = (token, email) => {
-    localStorage.setItem("isLoggedIn", "1");
-    localStorage.setItem("ACCESS_TOKEN", token);
-    localStorage.setItem("LOGIN_USEREMAIL", email);
+    sessionStorage.setItem("isLoggedIn", "1");
+    sessionStorage.setItem("ACCESS_TOKEN", token);
+    sessionStorage.setItem("LOGIN_USEREMAIL", email);
     setIsLoggedIn(true);
     setEmail(email);
   };
 
   // 토큰 및 로그인 유저 데이터를 브라우저에 저장하는 함수
   const setLoginUserInfo = ({ token, email }) => {
-    localStorage.setItem("ACCESS_TOKEN", token);
-    localStorage.setItem("LOGIN_USEREMAIL", email);
+    sessionStorage.setItem("ACCESS_TOKEN", token);
+    sessionStorage.setItem("LOGIN_USEREMAIL", email);
   };
 
   return (

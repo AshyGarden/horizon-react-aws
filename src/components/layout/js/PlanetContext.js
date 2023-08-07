@@ -39,9 +39,9 @@ const PlanetContext = ({ essential, optional }) => {
           <div className="planet-information">
             <div className="planet-info diameter">지름: ({diameter} km)</div>
             <div className="planet-info surface-area">
-              표면적: ({surface} km²)
+              표면적: ({surface} X 10⁶km²)
             </div>
-            <div className="planet-info mass">질량: ({mass} kg)</div>
+            <div className="planet-info mass">질량: ({mass} X 10²⁰kg)</div>
             <div className="planet-info rotation">
               자전주기: ({rotation} 일)
             </div>
@@ -52,7 +52,7 @@ const PlanetContext = ({ essential, optional }) => {
                 공전주기: ({revolution} 일)
               </div>
             )}
-            {celNameEng == "Sun" ? (
+            {celNameEng == "Sun" || celNameEng == "Moon" ? (
               ""
             ) : (
               <div className="planet-info earthLike">
@@ -63,7 +63,7 @@ const PlanetContext = ({ essential, optional }) => {
               ""
             ) : (
               <div className="planet-info orbital-radius">
-                궤도 반지름: ({orbitRadius} AU)
+                궤도 반지름: ({orbitRadius} AU(1AU = 약 149600000km))
               </div>
             )}
             {satellite1 && (

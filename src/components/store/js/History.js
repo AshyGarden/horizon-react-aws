@@ -24,6 +24,7 @@ const History = () => {
   const [token, setToken] = useState(getLoginUserInfo().token);
   const [list, setList] = useState([]);
   const redirection = useNavigate();
+  const [isRendered, setIsRendered] = useState(false);
 
   // 요청 헤더 설정
   const requestHeader = {
@@ -35,6 +36,9 @@ const History = () => {
   const API_SHOP_URL = BASE + SHOP;
 
   useEffect(() => {
+    if (!isRendered) {
+      setIsRendered(!isRendered);
+    }
     //로그아웃 상태면 로그인페이지로
     if (!isLoggedIn) {
       redirection("/");
@@ -52,7 +56,7 @@ const History = () => {
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
-  }, [list]);
+  }, [isRendered]);
 
   const deleteProduct = (id) => {
     fetch(API_SHOP_URL + "/history/" + id, {

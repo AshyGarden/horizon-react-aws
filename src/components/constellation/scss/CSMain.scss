@@ -8,8 +8,10 @@
 //전체 배경화면
 body {
     background: url("../../layout/img/background2.jpg");
+    background-size: 100% 105%;
     color: white;
     height: 100%;
+    overflow-y:scroll;
 }
 
 //테이블 세부사항
@@ -31,10 +33,20 @@ body {
 
 
         thead,tr,td {
-            padding: 2%;
+            // padding: 2%;
             border-collapse: collapse;
             border: none;
             font-family: 'Orbitron-Bold';
+        }
+        .main-news-title {
+            padding: 2%;
+            width: 80%;
+            font-size: 20px;
+        }
+
+        .main-news-date {
+            font-size: 20px;
+            color: white;
         }
 
         td {
@@ -44,20 +56,21 @@ body {
 
         .td-title{
             cursor: pointer;
-
-        }
-    
+            text-decoration: none;
+            
+        }    
         
         #News-tbody:nth-child(even) {
             background-color: #e2e2e2;
-            color: #1976d2;
+            color: black;
+            font-size: 24px;
         }
 
         #News-tbody:nth-child(odd) {
             background-color: black;
-            color: 
-            #b3c9ef;
-        }
+            color: white;
+            font-size: 24px;
+        } 
 
     
         
@@ -65,14 +78,6 @@ body {
 }
 
 //각 테이블 속성 (가로 크기 조정)
-
-.td-title {
-    font-size: 17px;
-}
-
-.td-date {
-    width: 150px;
-}
 
 //mui select 설정
 #demo-simple-select-helper-label {

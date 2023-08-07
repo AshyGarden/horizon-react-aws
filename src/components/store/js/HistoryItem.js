@@ -5,9 +5,6 @@ const HistoryItem = ({ item, deleteProduct }) => {
   const { id, name, content, price, address1, address2, buyDate, count } = item;
 
   const [date, setDate] = useState("");
-  useEffect(() => {
-    setDate(buyDate);
-  }, [date]);
 
   const dateObject = new Date(date);
 

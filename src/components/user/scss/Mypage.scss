@@ -4,6 +4,15 @@
   background: url("../../layout/img/background1.jpg");
 }
 
+.input-label {
+  color: white !important;
+}
+
+.no-mui-disabled .Mui-disabled {
+  opacity: inherit;
+  -webkit-text-fill-color: rgba(255,255,255,1) !important;
+}
+
 .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root{
   color: white !important;
 }

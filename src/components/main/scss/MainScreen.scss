@@ -3,6 +3,11 @@
     src: url("../../../../public/assets/fonts/Orbitron-Bold.woff2");
     font-style: normal;
  }
+ .main-wrapper {
+    width: 100%;
+    height: 100vh;
+    background: url("../../layout/img/background1.jpg");
+ }
 
 //전체 영역
 .MainMenu {
@@ -11,12 +16,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    // background-color: black;
 
 
    //큰 메뉴 버튼(Solar, News)
    .BigBtn {
     display: flex;
+    //margin-left: 2%;
     //margin-left: 2%;
 
     .NewsMenu {
@@ -25,16 +31,19 @@
         height: 100%;
         overflow: hidden;
         margin-top: 5%;
+        margin-top: 5%;
         background-repeat: no-repeat;
         cursor: pointer;
         background-image: url("../../../../public/assets/panel/Popup006_Blue_Opaque.png");
-        object-fit: cover;
-        
+        object-fit: cover;        
     }
+
 
     
     .solarMenu {
         position: relative;
+        width: 100%;
+        height: 100%;
         width: 100%;
         height: 100%;
         overflow: hidden;
@@ -57,75 +66,105 @@
         margin-top: 5%;
         cursor: pointer;
         background-image: url("../../../../public/assets/panel/Popup006_Blue_Opaque.png");
+        background-repeat: no-repeat;
+        margin-top: 5%;
+        cursor: pointer;
+        background-image: url("../../../../public/assets/panel/Popup006_Blue_Opaque.png");
         object-fit: cover;
     }
    }
 }
 
-   //이름 버튼
-   .News-main-btn {
-    cursor: pointer;
-    width: 70%;
-    height: 10%;
-    font-size: 20px;
-    margin-top: 10%;
-    margin-left: 8%;
-    border: 0;
-    outline: 0;
-    background: url("../../../../public/assets/icon/blueframe/ScFi_Circle01Blue_bg.png") no-repeat;
-    background-size: 100% 100%;
-    color: white;
-    font-family: 'Orbitron-Bold' !important;
-   }
-   
-
-   .Solar-main-btn {
-    cursor: pointer;
-    width: 70%;
-    height: 10%;
-    font-size: 20px;
-    margin-top: 10%;
-    margin-left: 8%;
-    border: 0;
-    outline: 0;
-    background: url("../../../../public/assets/icon/blueframe/ScFi_Circle01Blue_bg.png") no-repeat;
-    background-size: 100% 100%;
-    color: white;
-    font-family: 'Orbitron-Bold' !important;
-   }
+//이름 버튼
+.News-main-btn {
+cursor: pointer;
+width: 70%;
+height: 10%;
+font-size: 20px;
+width: 70%;
+height: 10%;
+font-size: 20px;
+margin-top: 10%;
+margin-left: 8%;
+border: 0;
+outline: 0;
+background: url("../../../../public/assets/icon/blueframe/ScFi_Circle01Blue_bg.png") no-repeat;
+background-size: 100% 100%;
+background-size: 100% 100%;
+color: white;
+font-family: 'Orbitron-Bold' !important;
+font-family: 'Orbitron-Bold' !important;
+}
 
 
-   .store-main-btn {
-    cursor: pointer;
-    width: 70%;
-    height: 10%;
-    font-size: 20px;
-    margin-top: 10%;
-    margin-left: 8%;
-    border: 0;
-    outline: 0;
-    background: url("../../../../public/assets/icon/blueframe/ScFi_Circle01Blue_bg.png") no-repeat;
-    background-size: 100% 100%;
-    color: white;
-    font-family: 'Orbitron-Bold' !important;
-   }
+.Solar-main-btn {
+cursor: pointer;
+width: 70%;
+height: 10%;
+font-size: 20px;
+width: 70%;
+height: 10%;
+font-size: 20px;
+margin-top: 10%;
+margin-left: 8%;
+border: 0;
+outline: 0;
+background: url("../../../../public/assets/icon/blueframe/ScFi_Circle01Blue_bg.png") no-repeat;
+background-size: 100% 100%;
+background-size: 100% 100%;
+color: white;
+font-family: 'Orbitron-Bold' !important;
+font-family: 'Orbitron-Bold' !important;
+}
 
-   //이미지
-   .News-image {
-    width: 80%;
-    height: 60%;
-    margin-top: 5%;
-    margin-left: 7%;
-   }
 
-   .Cosmos {
-    width: 50%;
-    margin-top: 22%;
-    margin-left: 25%;
-   }
+.store-main-btn {
+cursor: pointer;
+width: 70%;
+height: 10%;
+font-size: 20px;
+margin-top: 10%;
+margin-left: 8%;
+width: 70%;
+height: 10%;
+font-size: 20px;
+margin-top: 10%;
+margin-left: 8%;
+border: 0;
+outline: 0;
+background: url("../../../../public/assets/icon/blueframe/ScFi_Circle01Blue_bg.png") no-repeat;
+background-size: 100% 100%;
+background-size: 100% 100%;
+color: white;
+font-family: 'Orbitron-Bold' !important;
+font-family: 'Orbitron-Bold' !important;
+}
 
-   .storeImage {
-    width: 62%;
-    margin-top: 20%;
-    margin-left: 20%;
-   }
+//이미지
+.News-image {
+width: 80%;
+width: 80%;
+height: 60%;
+margin-top: 5%;
+margin-left: 7%;
+margin-top: 5%;
+margin-left: 7%;
+}
+
+.Cosmos {
+width: 50%;
+margin-top: 22%;
+margin-left: 25%;
+width: 50%;
+margin-top: 22%;
+margin-left: 25%;
+}
+
+.storeImage {
+width: 62%;
+margin-top: 20%;
+width: 62%;
+margin-top: 20%;
+margin-left: 20%;
+}
+  
