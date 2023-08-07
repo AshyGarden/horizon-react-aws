@@ -36,12 +36,11 @@ const History = () => {
   const API_SHOP_URL = BASE + SHOP;
 
   useEffect(() => {
-    if (!isRendered) {
-      setIsRendered(!isRendered);
-    }
     //로그아웃 상태면 로그인페이지로
     if (!isLoggedIn) {
       redirection("/");
+    } else if (!isRendered) {
+      setIsRendered(true);
     }
     // 페이지가 렌더링 됨과 동시에 할 일 목록을 요청해서 뿌려주기.
     fetch(API_SHOP_URL + "/historyList", {
@@ -64,7 +63,9 @@ const History = () => {
       headers: requestHeader,
     })
       .then((res) => res.json())
-      .then((json) => {})
+      .then((json) => {
+        setIsRendered(!isRendered);
+      })
       .catch((error) => {
         console.error("Error deleting product:", error);
       });
